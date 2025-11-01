@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stroud MCQ Quiz — 30 Questions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./quiz-prep.css">
+
+  <script>
+    // MathJax configuration for inline $...$ and \(...\)
+    window.MathJax = {tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'}};
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div>
+          <h1>ARB QUIZ PREP - SVY<br><span class="small">30 random MCQs • 15 minutes • answers at the end</span></h1>
+        </div>
+        <div class="meta">
+          <div class="topbar small">
+            <div>Questions: <strong id="qcount">30</strong></div>
+            <div style="margin-left:8px">Time: <span class="timer" id="timer">15:00</span></div>
+          </div>
+          <button class="btn" id="startBtn">Load & Start Quiz</button>
+        </div>
+      </header>
+
+      <div id="loader" class="muted" style="display:none">Loading questions…</div>
+
+      <div id="quiz" class="quiz-area" style="display:none"></div>
+
+      <div class="footer" style="display:none" id="controls">
+        <div class="muted">Pick one answer per question. You can change answers before submitting.</div>
+        <div>
+          <button class="btn secondary" id="resetBtn">Reset</button>
+          <button class="btn" id="submitBtn">Submit Quiz</button>
+        </div>
+      </div>
+
+      <div id="resultsWrap" style="display:none">
+        <h3>Results</h3>
+        <div id="scoreBox" class="card" style="padding:12px;margin-bottom:12px"></div>
+        <div id="results" class="results"></div>
+        <div class="center"><button class="btn" id="restartBtn">Restart Quiz</button></div>
+      </div>
+
+      <hr style="margin-top:18px;border:none;border-top:1px solid #eef6ff" />
+      <div class="small muted">There is a maximum of 30s per question on average, so <strong>SPEND YOUR TIME WISELY</strong></div>
+      <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+        <input type="file" id="fileInput" accept="application/json" style="display: none;" />
+        
+      </div>
+    </div>
+  </div>
+
+<script src="./quiz-prep.js">
+
+</script>
+</body>
+</html>

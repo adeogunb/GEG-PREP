@@ -1,0 +1,144 @@
+:root{
+      --bg:#f6fbff; --card:#ffffff; --accent:#0066ff; --accent-2:#00c2a8; --muted:#556; --correct:#1aab2a; --wrong:#d63447;
+    }
+*{
+  box-sizing:border-box;
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial
+}
+body{
+  margin:0;
+  background:linear-gradient(160deg,var(--bg),#e9f7ff 60%);color:var(--muted)
+}
+
+.container{
+  max-width:1000px;
+  margin:32px auto;
+  padding:20px
+}
+
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:18px;
+  box-shadow:0 6px 24px rgba(10,40,80,0.06)
+}
+
+header{
+  display:flex;align-items:center;
+  justify-content:space-between;
+  margin-bottom:14px
+}
+
+h1{
+  font-size:20px;
+  margin:0;
+  color:#08306b
+}
+
+.meta{
+  display:flex;
+  gap:12px;
+  align-items:center
+}
+
+.btn{
+  background:var(--accent);
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  border:0;
+  cursor:pointer;
+  font-weight:600
+}
+
+.btn.secondary{
+  background:var(--accent-2)
+}
+
+.small{
+  font-size:13px;
+  color:#334
+}
+
+.quiz-area{
+  margin-top:18px
+}
+
+.question{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #eef6ff;
+  margin-bottom:12px
+}
+
+.qtext{
+  font-weight:600;
+  color:#03306a
+}
+
+.options{
+  margin-top:8px;
+  display:grid;
+  gap:8px
+}
+
+.option{
+  background:#f8fbff;
+  border-radius:8px;
+  padding:8px;
+  border:1px solid transparent;
+  cursor:pointer
+}
+
+.option input{
+  margin-right:10px
+}
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:12px
+}
+
+.timer{
+  font-weight:700;
+  color:#08306b
+}
+
+.results{
+  margin-top:18px
+}
+.result-item{
+  padding:10px;
+  border-radius:8px;
+  background:#fbfdff;
+  border:1px solid #e6f4ff;
+  margin-bottom:8px
+}
+
+.correct{
+  color:var(--correct);
+  font-weight:700
+}
+
+.wrong{
+  color:var(--wrong);
+  font-weight:700
+}
+
+.muted{
+  color:#6a7580
+}
+
+.center{
+  display:flex;
+  justify-content:center
+}
+
+.topbar{
+  display:flex;
+  gap:8px;
+  align-items:center
+}
+
+@media(max-width:700px){.container{padding:12px}} 
